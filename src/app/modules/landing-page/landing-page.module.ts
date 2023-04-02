@@ -10,7 +10,6 @@ import { LandingPageComponent } from './views/landing-page.component';
   ],
   imports: [
     CommonModule
-  ],
-  exports:[LandingPageComponent]
+  ]
 })
 export class LandingPageModule { }

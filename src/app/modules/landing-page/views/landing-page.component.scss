@@ -1,0 +1,161 @@
+.navbar {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    border-bottom: none;
+    padding: 1.75rem 1rem 0.5rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .logo-image {
+        color: #ffffff;
+        font-size: 38px !important;
+    }
+
+    .container {
+        width: 1500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        .navbar-toggler {
+            visibility: hidden;
+        }
+
+        .offcanvas-collapse {
+            position: static;
+            background-color: transparent;
+            overflow-y: visible;
+            visibility: visible;
+
+            .navbar-nav {
+                display: flex;
+            }
+        }
+    }
+
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+    i {
+        color: #ffffff;
+        font-size: 18px;
+        margin-right: 12px;
+
+    }
+
+    .nav-item {
+        color: #f8e7eb;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        padding-bottom: 12px;
+
+        span {
+            display: flex;
+            margin-bottom: 12px;
+        }
+    }
+
+    .nav-item {
+        color: #ffffff;
+    }
+
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+.header {
+    position: relative;
+    background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url(../../../../assets/nathan.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    padding-top: 12rem;
+    padding-bottom: 16rem;
+
+    .h1-large {
+        margin-bottom: 1.125rem;
+        color: #ffffff;
+        font-size: 5.5rem;
+        line-height: 6rem;
+    }
+
+    .p-large {
+        margin-bottom: 2.125rem;
+        color: #ffffff;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .btn-outline-lg {
+        border-color: #ffffff;
+        color: #ffffff;
+        display: inline-block;
+        padding: 1.625rem 2.75rem 1.625rem 2.75rem;
+        border: 1px solid #ffffff;
+        border-radius: 32px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 0;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #333333;
+        }
+    }
+
+    .header-decoration {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: transparent;
+        transition: all 0.2s;
+        background-color: #ec3258;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        border-bottom: 1px solid #f06b7f;
+        padding: 0.5rem 1rem;
+
+        a {
+            padding: 4px 16px 4px 0;
+        }
+
+        .container {
+            .navbar-toggler {
+                visibility: visible;
+            }
+
+            .offcanvas-collapse {
+                visibility: hidden;
+                display: none;
+            }
+        }
+    }
+
+}
