@@ -1,0 +1,42 @@
+// -> colors vars
+
+$white: #ffffff;
+$primaryColor: #845EC2;;
+$SegundaryColor: #4B4453;
+$black: #000;
+
+$PrimaryText: #B0A8B9;
+$SecondaryText: #00896F;
+$TreeText: #00C0A3;
+
+// $Warning: #C35403;
+// $Report: #E16206;
+// $Error: #F87C23;
+// $Success: #508110;
+
+/* @mixin white(){color: $white;}
+
+@include white-colors() */
+
+
+// -> colors mixins
+
+@mixin color-white { color: $white!important; }
+@mixin color-primary { color: $primaryColor!important; }
+@mixin color-Segundary { color: $SegundaryColor!important; }
+@mixin color-black { color: $black!important; }
+@mixin color-primaryText { color: $PrimaryText!important; }
+@mixin color-SecondaryText { color: $SecondaryText!important; }
+@mixin  color-TreeText {color: $TreeText!important;}    
+
+// -> colors classes
+
+
+.color-white { @include color-white; }
+.color-primary{ @include color-primary;}
+.color-Segundary {@include color-Segundary;}
+.color-PrimaryDark { @include color-black; }
+.color-SecondaryDark{ @include color-primaryText;}
+.color-PrimaryDark { @include color-SecondaryText;}
+.color-SecondaryDark { @include color-TreeText;}
+
