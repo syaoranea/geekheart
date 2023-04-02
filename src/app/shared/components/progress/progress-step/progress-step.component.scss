@@ -1,0 +1,16 @@
+
+:host.activeStep {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+:host:not(.activeStep) {
+  display: none;
+  padding: 10px;
+  transform: translateY(-8px);
+  opacity: 0;
+}
+
