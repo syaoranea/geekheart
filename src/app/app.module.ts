@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CadastroModule } from './modules/cadastro/cadastro.module';
 import { LandingPageModule } from './modules/landing-page/landing-page.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { LandingPageModule } from './modules/landing-page/landing-page.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LandingPageModule
+    LandingPageModule,
+    CadastroModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
